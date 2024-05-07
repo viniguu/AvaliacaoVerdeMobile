@@ -15,7 +15,7 @@ import {
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import TelaRegistro from './src/pages/TelaRegistro';
-import Home from './src/pages/Home'; 
+import Principal from './src/pages/Principal';
 
 
 const Stack = createStackNavigator();
@@ -64,7 +64,7 @@ const HomeScreen = ({ navigation }) => {
 
         <TouchableOpacity 
         style={styles.btnSubmit}
-        onPress={()=> navigation.navigate('Home')}
+        onPress={()=> navigation.navigate('Principal')}
         >
           <Text style={styles.submitText}>Acessar</Text>
         </TouchableOpacity>
@@ -87,6 +87,7 @@ export default function App() {
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" options={{headerShown:false}} component={HomeScreen} />
         <Stack.Screen name="TelaRegistro" options={{headerShown:false}} component={TelaRegistro} />
+        <Stack.Screen name="Principal" options={{headerShown:false}} component={Principal}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
