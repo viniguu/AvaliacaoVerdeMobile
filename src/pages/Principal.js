@@ -21,13 +21,9 @@ export default function Principal() {
             <View style={styles.container}>
                 <Header />
                 <ScrollView>
+                        <Text style={styles.cabecalho}>Qual é o nosso objetivo?</Text>
+                        <Text style={styles.texto1}>O objetivo da pesquisa é analisar os impactos e benefícios da Via Parque em Caruaru, investigando seu efeito no trânsito, mobilidade, desenvolvimento econômico e qualidade de vida. Também avaliaremos as políticas públicas e investimentos associados a ela, identificando desafios e oportunidades para melhorias na gestão urbana e no desenvolvimento sustentável da cidade.</Text>
                     <Text style={styles.Letra}>
-                        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-                        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-                        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-                        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-
-                        AAAAAAAAAAAAAAAAAA
                     </Text>
                 </ScrollView>
             </View>
@@ -38,6 +34,8 @@ export default function Principal() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        backgroundColor:'#fff',
+        opacity:0.5
     },
     header: {
         flexDirection: 'row',
@@ -61,6 +59,18 @@ const styles = StyleSheet.create({
     containerlogos: {
         alignItems: 'center',
         justifyContent: 'center'
+    },
+corfundo:{
+    backgroundColor:'#fff'
+},
+    cabecalho:{
+        fontSize: 50,
+        color:'black',
+        fontWeight:"bold"
+    },
+    texto1:{
+        textAlign:'justify',
+        fontWeight:"bold"
     }
 });
 
